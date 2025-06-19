@@ -1,0 +1,15 @@
+[
+  {
+    "title": "Python 101",
+    "author": "John Doe",
+    "year": 2020,
+    "type": "Book"
+  },
+  {
+    "title": "Fast Python",
+    "author": "Jane Smith",
+    "year": 2022,
+    "file_format": "PDF",
+    "type": "Ebook"
+  }
+]
