@@ -1,0 +1,34 @@
+version: "3.9"
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    image: student-analytics-api
+    container_name: student-analytics-api
+    ports:
+      - "8000:8000"
+    # กรณี dev (hot reload) ให้ mount code: 
+    # volumes:
+    #   - ./backend/app:/app/app
+    # environment:
+    #   - ENV_VAR=xxx
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: my-frontend
+    container_name: my-frontend
+    ports:
+      - "3000:3000"
+    # สั่ง Next.js ให้ชี้ไปที่ backend container โดยใช้ "http://backend:8000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://backend:8000
+    depends_on:
+      - backend
+    # กรณี dev (hot reload) ให้ mount code:
+    # volumes:
+    #   - ./frontend:/app
+

@@ -1,3 +1,82 @@
+# # ====== backend ======
+
+# # Byte-compiled / optimized / DLL files
+# __pycache__/
+# *.py[cod]
+# *.so
+
+# # Virtual environment
+# .venv/
+# env/
+# ENV/
+
+# # Jupyter Notebook checkpoints
+# .ipynb_checkpoints
+
+# # VS Code settings
+# .vscode/
+
+# # OS files
+# .DS_Store
+
+# # Output, build, log, and cache directories
+# output/
+# *.log
+# *.sqlite3
+
+# # PyCharm
+# .idea/
+
+
+# # ====== frontend ======
+
+
+# # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# # dependencies
+# **/node_modules/
+# /node_modules
+# /.pnp
+# .pnp.*
+# .yarn/*
+# !.yarn/patches
+# !.yarn/plugins
+# !.yarn/releases
+# !.yarn/versions
+
+# # testing
+# /coverage
+
+# # next.js
+# /.next/
+# /out/
+
+# # production
+# /build
+
+# # misc
+# .DS_Store
+# *.pem
+
+# # debug
+# npm-debug.log*
+# yarn-debug.log*
+# yarn-error.log*
+# .pnpm-debug.log*
+
+# # env files (can opt-in for committing if needed)
+# .env*
+
+# # vercel
+# .vercel
+
+# # typescript
+# *.tsbuildinfo
+# next-env.d.ts
+
+
+# ====== backend ======
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -9,13 +88,14 @@ env/
 ENV/
 
 # Jupyter Notebook checkpoints
-.ipynb_checkpoints
+.ipynb_checkpoints/
 
 # VS Code settings
 .vscode/
 
 # OS files
 .DS_Store
+Thumbs.db
 
 # Output, build, log, and cache directories
 output/
@@ -24,3 +104,61 @@ output/
 
 # PyCharm
 .idea/
+
+# ====== frontend ======
+
+# node_modules ทุกรูปแบบ ทุก path ทุกระดับ
+node_modules/
+**/node_modules/
+
+# Yarn, pnpm, Bun
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+.pnpm-debug.log*
+bun.lockb
+
+# coverage & build
+coverage/
+build/
+dist/
+.out/
+.next/
+out/
+.next/
+*.tsbuildinfo
+
+# Misc
+.DS_Store
+*.pem
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Env files
+.env*
+.env.local
+.env.*.local
+
+# Vercel
+.vercel/
+
+# TypeScript
+next-env.d.ts
+
+# Editor directories and files
+.idea/
+.vscode/
+
+# Mac System files
+.DS_Store
+
+# Docker
+*.pid
